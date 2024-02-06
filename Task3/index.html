@@ -5,45 +5,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Task3</title>
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
 <body>
+  <!-- Start header  -->
   <header>
-    <div class="overlay">
-      <section class="navbar">
-        <nav>
-          <a href="#">Boomerang</a>
-          <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">PAGES</a></li>
-            <li><a href="#"> PORTFOLIO</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#">SHOP</a></li>
-            <li><a href="#">COMPONENTS</a></li>
-            <li><a href="#">DEMOS</a></li>
-          </ul>
-          <div class="icons">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <i class="fa fa-bars"></i>
-          </div>
-        </nav>
-      </section>
-      <section class="content">
+    <div class="container">
+      <div class="logo">
+        <a href="#">Boomerang</a>
+      </div>
+      <nav>
+        <!-- <i class="fa fa-bars osama"></i> -->
+        <div class="osama">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#Pages">Pages</a></li>
+          <li><a href="#portofolio">portofolio</a></li>
+          <li><a href="#Blog">Blog</a></li>
+          <li><a href="#Shop">Shop</a></li>
+          <li><a href="#components">components</a></li>
+          <li><a href="#Demos">Demos</a></li>
+        </ul>
+        <div class="icons">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- End header  -->
+  <main>
+    <!-- Start Landing -->
+    <section class="landing">
+      <div class="content">
+        <div class="text">
         <h2>Your customers will love you
           one minute from now.</h2>
         <p>See how your users experience your website in realtime or view
           trends to see any changes in performance over time.</p>
-        <button>GET STARTED</button>
-        <button>LEARN MORE</button>
-      </section>
-    </div>
-  </header>
-  <main>
+        <button class="btn">GET STARTED</button>
+        <button class="btn">LEARN MORE</button>
+      </div>
+      </div>
+    </section>
+    <!-- End Landing -->
     <!-- Start winter -->
+
     <section class="winter">
       <div>
         <h3 class="main-heading">Your Site, Your Way.</h3>
@@ -186,13 +200,14 @@
     </section>
     <!-- End digital-design -->
     <!-- Start Services -->
+    <hr/>
     <section class="Services">
       <div class="image">
         <img src="images/ipad.png" alt="">
       </div>
       <div class="content">
         <div class="top">
-          <h3>Flexible & Lightweight.</h3>
+          <h3 class="main-heading">Flexible & Lightweight.</h3>
           <p>Map where your photos were taken and discover local points of interest. Map where your photos. Map where
             your photos were taken and discover.</p>
         </div>
@@ -200,8 +215,6 @@
           <div class="item">
             <div>
               <i class="fa-solid fa-table-columns"></i>
-            </div>
-            <div>
               <h4>Visual Composer</h4>
               <p>Map where your photos were taken and discover local points of interest. Map where your photos. Map
                 where
@@ -211,8 +224,6 @@
           <div class="item">
             <div>
               <i class="fa-solid fa-trophy"></i>
-            </div>
-            <div>
               <h4>Revolution Slider</h4>
               <p>Map where your photos were taken and discover local points of interest. Map where your photos. Map
                 where
@@ -222,8 +233,6 @@
           <div class="item">
             <div>
               <i class="fa-regular fa-hard-drive"></i>
-            </div>
-            <div>
               <h4>User Experience</h4>
               <p>Map where your photos were taken and discover local points of interest. Map where your photos. Map
                 where
@@ -235,7 +244,9 @@
     </section>
     <!-- End Services -->
     <!-- Start Teams  -->
+    <hr/>
     <section class="Teams">
+      <div class="container">
       <div>
         <h3 class="main-heading">Creative People.</h3>
         <p>See how your users experience your website in realtime or view trends to see any changes in
@@ -260,7 +271,7 @@
           </div>
         </div>
         <div class="card">
-          <div>
+          <div class=" image">
             <img src="images/card2.jpg" alt="">
           </div>
           <div>
@@ -341,14 +352,25 @@
         </div>
       </div>
       <button>About Us</button>
+    </div>
     </section>
     <!-- End Teams  -->
     <!-- Start Testimonails  -->
     <section class="testimonails">
       <div class="overlay"></div>
+      <!-- <div class="direction"> -->
+        <i class="fa-solid fa-arrow-left  prev"></i>
+        <i class="fa-solid fa-arrow-right  next"></i>
+
+        <ul class="bullets">
+          <li class="left"></li>
+          <li class="center"></li>
+          <li class="right"></li>
+        </ul>
+      <!-- </div> -->
       <div class="cards">
-        <!-- شوف Hover -->
-        <!-- <div class="left-card card">
+    <!-- شوف Hover -->
+    <div class="left-card card">
           <div class="image">
             <img src="images/artist.jpg" alt="">
           </div>
@@ -357,8 +379,8 @@
               accomplishment</p>
             <p>Ralph Waldo Emerson</p>
           </div>
-        </div> -->
-        <div class="center-card card">
+        </div>
+    <div class="center-card card">
           <div class="image">
             <img src="images/artist.jpg" alt="">
           </div>
@@ -369,7 +391,7 @@
           </div>
         </div>
 
-        <!-- <div class="right-card card">
+    <div class="right-card card">
           <div class="image">
             <img src="images/artist.jpg" alt="">
           </div>
@@ -377,18 +399,8 @@
             <p>Imperfrection is beauty,madness is genuis and it`s better to be absolutely ridiculous than absolutely boring</p>
             <p>Marilyn Monroe</p>
           </div>
-        </div> -->
-      </div>
-      <div class="direction">
-        <i class="fa-solid fa-arrow-left  prev"></i>
-        <i class="fa-solid fa-arrow-right  next"></i>
-      </div>
-      <ul class="bullets">
-        <li class="left">
-        </li>
-        <li class="center"></li>
-        <li class="right"></li>
-      </ul>
+        </div>
+    </div>
 
     </section>
     <!-- End Testimonails  -->
@@ -435,25 +447,36 @@
           </div>
         </div>
       </div>
+      </ul>
       <div class="certifics">
-        <div class="cert">
-          <img src="images/prand1.png" alt="">
+        <i class="fa-solid fa-arrow-left  prev"></i>
+        <i class="fa-solid fa-arrow-right  next"></i>
+  
+        <ul class="bullets">
+          <li class="left"></li>
+          <li class="center"></li>
+          <li class="right"></li>
+        </ul>
+
+        <div class="cert left">
+          <img src="images/prand1.png">
+        </div>
+        <div class="cert move-right">
+          <img src="images/prand2.png" >
         </div>
         <div class="cert">
-          <img src="images/prand2.png" alt="">
+          <img src="images/prand3.png" >
         </div>
         <div class="cert">
-          <img src="images/prand3.png" alt="">
+          <img src="images/prand4.png" >
         </div>
-        <div class="cert">
-          <img src="images/prand4.png" alt="">
+        <div class="cert move-left">
+          <img src="images/prand5.png" >
         </div>
-        <div class="cert">
-          <img src="images/prand5.png" alt="">
+        <div class="cert right">
+          <img src="images/prand6.png" >
         </div>
-        <div class="cert">
-          <img src="images/prand6.png" alt="">
-        </div>
+
       </div>
     </div>
     <!-- End Clients -->
@@ -530,17 +553,19 @@
       <img src="/images/family.jpg" alt="">
     </section>
     <!-- End Family -->
-  </main>
-  <!-- End main -->
-  <!-- Start Footer  -->
-  <footer>
+    </main>
+    <!-- End main -->
+    <!-- Start Footer  -->
+    <footer>
     <div class="parent">
       <div class="aboutus">
         <h3>ABOUT US</h3>
+        <div>
         <p>Map where your photos were taken and discover local points of interest. Map where your photos.</p>
         <p>Location: 12 London Avenue, Suite 18 <br>
           E-mail: support@theme.com <br>
           Phone: 8 800 123 4567</p>
+        </div>
         <div class="icons">
           <i class="fa-brands fa-twitter"></i>
           <i class="fa-brands fa-instagram"></i>
@@ -591,11 +616,10 @@
       </div>
     </div>
     <div class="last">
-      <hr>
       <p>© 2018 Boomerang, All Rights Reserved. Design with love by 2theme</p>
     </div>
   </footer>
-  <!-- End Footer -->
+    <!-- End Footer -->
 </body>
 
 </html>
